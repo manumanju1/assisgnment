@@ -1,12 +1,5 @@
 package empsite.servlet;
 
-import java.io.IOException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.HashMap;
-
 import empsite.util.DBHelper;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletContext;
@@ -16,6 +9,10 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 @WebServlet("/add")
 public class AddServlet extends HttpServlet {
@@ -71,7 +68,7 @@ public class AddServlet extends HttpServlet {
 			
 
 		
-		int empid = Integer.parseInt(request.getParameter("empid"));
+		int empid = Integer.parseInt(request.getParameter("empid")); //manoj
 		String firstname = request.getParameter("firstname");
 		String lastname = request.getParameter("lastname");
 		String email = request.getParameter("email");
