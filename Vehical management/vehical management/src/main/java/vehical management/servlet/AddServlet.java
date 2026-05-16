@@ -69,7 +69,7 @@ public class AddServlet extends HttpServlet {
 
 		
 		int empid = Integer.parseInt(request.getParameter("empid")); //manoj
-		String firstname = request.getParameter("firstname");
+		String firstname = request.getParameter("firstname"); //manoj
 		String lastname = request.getParameter("lastname");
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
